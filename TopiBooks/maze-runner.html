@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TopiBooks</title>
+    <link rel="shortcurt icon" type="image/png" href="/Images/Favicon.png">
+    <link rel="stylesheet" href="/demo.css">
+
+<style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 90%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#navlist {
+    background-color: none;
+    background-image: url("/Images/Logo\ 1.png");
+    background-size: 30%;
+    background-position: center;
+    padding: 40px;
+    height: 10px;
+    position:absolute;
+    width:100%;
+    margin: 0px;
+
+} 
+.navlist-right{
+    float: right;
+
+}
+#navlist a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.content figure{
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+}
+
+.content figure img {
+    width: 100px;
+    border-radius: 10px;
+    
+}
+form input {
+    width: 30rem;
+    padding: 7px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--color-sec);
+}
+
+.features {
+    background: white;
+    color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features figure img {
+    border-radius: 10px;
+    position: initial;
+    margin-top:  0px;
+    margin-bottom: -10px;
+    padding: 1px;
+    width: 200px;
+}
+figure .caption {
+    position:absolute;
+    text-align: left;
+    margin-top: 2px;
+    color: black;
+    margin-bottom: 50px;
+
+}
+section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align:justify;
+    color: rgb(34, 32, 32);
+}
+
+h4{
+    color: rgb(36, 34, 34);
+    line-height: 0.5cm;
+}
+
+p{
+    color: rgb(49, 47, 47);
+}
+
+.pagination a{
+    font-size: 20px;
+    text-align: center;  
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+    </style>
+
+</head>
+    <body>
+
+        <header>
+            <nav id="navlist">
+                  <!--search bar right align-->   
+                  <nav class="search">
+    
+                    <div class="wrapper">
+                    <div class="search-input">
+                     
+                          <input type="text"  placeholder="Search..." name="search">
+                
+                          <div class="autocom-box">
+                       
+                            <ul>
+                            <li><a href="/TopiBooks/5-love-languages.html">the 5 love languages Gary Chapman</a></li>
+                            <li><a href="/TopiBooks/7-habits.html">7 habits of highly effective people Steven R. Covey</a></li>
+                            <li><a href="/TopiBooks/5-love-languages.html">the 5 love languages Gary Chapman</a></li>
+                            <li><a href="/TopiBooks/7-habits.html">7 habits of highly effective people Steven R. Covey</a></li>
+                            <li><a href="/TopiBooks/20,000-leagues.html">20,000 leagues under the sea Jules Verne</a></li>
+                            <li><a href="/TopiBooks/a-march-bride.html">a march bride Rachel Hauck</a></li>
+                            <li><a href="/TopiBooks/a-voice-in-the-wind.html">a voice in the wind Francine Rivers</a></li>
+                            <li><a href="/TopiBooks/a-walk-to-remember.html">a walk to remember Nicholas Sparks</a></li>
+                            <li><a href="/TopiBooks/alice-in-wonderland.html">alice in wonderland Lewis Carroll</a></li>
+                            <li><a href="/TopiBooks/allegiant.html">allegiant Veronica Roth</a></li>
+                            <li><a href="/TopiBooks/along-came-a-prince.html">along came a prince Carol Moncado</a></li>
+                            <li><a href="/TopiBooks/animal-farm.html">animal farm George Orwell</a></li>
+                            <li><a href="/TopiBooks/as-sure-as-dawn.html">as sure as dawn Francine Rivers</a></li>
+                            <li><a href="/TopiBooks/baron-of-godsmere.html">baron of godsmere Tamara Leigh</a></li>
+                            <li><a href="/TopiBooks/beastly.html">beastly Alex Flinn</a></li>
+                            <li><a href="/TopiBooks/catching-fire.html">catching fire Suzanne Collins</a></li>
+                            <li><a href="/TopiBooks/chronicles-of-narnia.html">chronicles of narnia C S Lewis</a></li>
+                            <li><a href="/TopiBooks/crossed.html">crossed Ally Condie</a></li>
+                            <li><a href="/TopiBooks/crown.html">crown Kiera Cass</a></li>
+                            <li><a href="/TopiBooks/delirium.html">delirium Lauren Oliver</a></li>
+                            <li><a href="/TopiBooks/divergent.html">divergent Veronica Roth</a></li>
+                            <li><a href="/TopiBooks/dr-jekyll.html">dr jekyll and mr hyde Robert Louis Stevenson</a></li>
+                            <li><a href="/TopiBooks/echo-in-the-darkness.html">echo in the darkness Francine Rivers</a></li>
+                            <li><a href="/TopiBooks/frankenstein.html">frankenstein Mary Shelley</a></li>
+                            <li><a href="/TopiBooks/from-russia-with-love.html">from Russia with love susan may Warren</a></li>
+                            <li><a href="/TopiBooks/gifted-hands.html">gifted hands Ben Carson</a></li>
+                            <li><a href="/TopiBooks/good-enough-for-a-princess.html">good enough for a princess Carol Moncado</a></li>
+                            <li><a href="/TopiBooks/great-expectations.html">great expectations Charles Dickens</a></li>
+                            <li><a href="/TopiBooks/greater-than-rubies.html">greater than rubies Hallee Bridgeman</a></li>
+                            <li><a href="/TopiBooks/grimm-brothers.html">grimm brothers fairytales</a></li>
+                            <li><a href="/TopiBooks/hamlet.html">hamlet William Shakespeare</a></li>
+                            <li><a href="/TopiBooks/hans-christian-andersen.html">hans christian andersen fairytales</a></li>
+                            <li><a href="/TopiBooks/head-in-the-clouds.html">head in the clouds Karen Witemeyer</a></li>
+                            <li><a href="/TopiBooks/heir.html">heir Kiera Cass</a></li>
+                            <li><a href="/TopiBooks/how-to-catch-a-prince.html">how to catch a prince Rachel Hauck</a></li>
+                            <li><a href="/TopiBooks/how-to-stop-worrying.html">how to stop worrying and start living Dale Carnegie</a></li>
+                            <li><a href="/TopiBooks/how-to-win-friends.html">how to win friends and influence people Dale Carnegie</a></li>
+                            <li><a href="/TopiBooks/huckleberry-finn.html">adventures of huckleberry finn Mark Twain</a></li>
+                            <li><a href="/TopiBooks/hunger-games.html">hunger-games Suzanne Collins</a></li>
+                            <li><a href="/TopiBooks/insurgent.html">insurgent veronica Roth</a></li>
+                            <li><a href="/TopiBooks/into-the-still-blue.html">into the still blue Veronica Rossi</a></li>
+                            <li><a href="/TopiBooks/Jane-Eyre.html">jane eyre Charlotte Bronte</a></li>
+                            <li><a href="/TopiBooks/journey-to-the-center.html">journey to the center of the earth Jules Verne</a></li>
+                            <li><a href="/TopiBooks/kidnapped.html">kidnapped Robert Louis Stevenson</a></li>
+                            <li><a href="/TopiBooks/legend.html">legend Marie Lu</a></li>
+                            <li><a href="/TopiBooks/les-miserables.html">les miserables Victor Hugo</a></li>
+                            <li><a href="/TopiBooks/little-women.html">little women Louisa may Alcott</a></li>
+                            <li><a href="/TopiBooks/matched.html">matched Ally Condie</a></li>
+                            <li><a href="/TopiBooks/maze-runner.html">maze runner James Dashner</a></li>
+                            <li><a href="/TopiBooks/merciless.html">Merciless Tamara Leigh</a></li>
+                            <li><a href="/TopiBooks/mere-christianity.html">mere christianity C S Lewis</a></li>
+                            <li><a href="/TopiBooks/moby-dick.html">moby dick Herman Melville</a></li>
+                            <li><a href="/TopiBooks/mockingjay.html">mockingjay Suzanne Collins</a></li>
+                            <li><a href="/TopiBooks/north-and-south.html">north and south Elizabeth Gaskell</a></li>
+                            <li><a href="/TopiBooks/echo-in-the-darkness.html">echo in the darkness Francine Rivers</a></li>
+                            <li><a href="/TopiBooks/of-mice-and-men.html">of mice and men John Steinbeck</a></li>
+                            <li><a href="/TopiBooks/once-upon-a-prince.html">once upon a prince Rachel Hauck</a></li>
+                            <li><a href="/TopiBooks/one.html">one Kiera Cass</a></li>
+                            <li><a href="/TopiBooks/othello.html">othello William Shakespeare</a></li>
+                            <li><a href="/TopiBooks/pandemonium.html">pandemonium Lauren Oliver</a></li>
+                            <li><a href="/TopiBooks/persuasion.html">persuasion Jane Austen</a></li>
+                            <li><a href="/TopiBooks/pride-and-prejudice.html">pride and prejudice Emily Bronte</a></li>
+                            <li><a href="/TopiBooks/reached.html">reached Ally Condie</a></li>
+                            <li><a href="/TopiBooks/red-queen.html">red queen Victoria Eveyard</a></li>
+                            <li><a href="/TopiBooks/redeeming-love.html">redeeming-love Francine Rivers</a></li>
+                            <li><a href="/TopiBooks/rich-dad-poor-dad.html">rich dad poor dad Robert Kiyosaki</a></li>
+                            <li><a href="/TopiBooks/rich-dad-poor-dad-teenshtml">rich dad poor dad for teens Robert Kiyosaki</a></li>
+                            <li><a href="/TopiBooks/romeo-and-juliet.html">romeo and juliet William Shakespeare</a></li>
+                            <li><a href="/TopiBooks/sapphire-ice.html">sapphire ice Hallee Bridgeman</a></li>
+                            <li><a href="/TopiBooks/secret-garden.html">secret garden Frances Hodgson Burnett</a></li>
+                            <li><a href="/TopiBooks/selection.html">selection Kiera Cass</a></li>
+                            <li><a href="/TopiBooks/sense-and-sensibility.html">sense and sensibility Jane Austen</a></li>
+                            <li><a href="/TopiBooks/the-art-of-war.html">the art of war Sun Tzu</a></li>
+                            <li><a href="/TopiBooks/the-catcher-in-the-rye.html">the catcher in the rye J D Salinger</a></li>
+                            <li><a href="/TopiBooks/the-crucible.html">the crucible Arthur Miller</a></li>
+                            <li><a href="/TopiBooks/the-death-cure.html">the death cure James Dashner</a></li>
+                            <li><a href="/TopiBooks/the-great-gatsby.html">the great gatsby F. Scott Fitzgerald</a></li>
+                            <li><a href="/TopiBooks/the-iliad.html">the Iliad Homer</a></li>
+                            <li><a href="/TopiBooks/the-lucky-one.html">the lucky one Nicholas Sparks</a></li>
+                            <li><a href="/TopiBooks/the-margician-nephew.html">the margician's nephew C S Lewis</a></li>
+                            <li><a href="/TopiBooks/the-merchant-of-venice.html">the merchant of venice William Shakespeare</a></li>
+                            <li><a href="/TopiBooks/the-phantom-of-the-opera.html">the phantom of the opera Gaston Leroux</a></li>
+                            <li><a href="/TopiBooks/the-princess-diaries.html">the princess diaries Meg Cabot</a></li>
+                            <li><a href="/TopiBooks/the-scarlet-letter.html">the scarlet letter Nathaniel Hawthorne</a></li>
+                            <li><a href="/TopiBooks/the-scotch-trials.html">the scotch trials James Dashner</a></li>
+                            <li><a href="/TopiBooks/the-three-musketeers.html">the three musketeers Alexandre Dumas</a></li>
+                            <li><a href="/TopiBooks/the-unveiling.html">the unveiling Tamara Leigh</a></li>
+                            <li><a href="/TopiBooks/the-war-of-the-worlds.html">the war of the worlds H G Wells</a></li>
+                            <li><a href="/TopiBooks/the-wind-in-the-willows.html">the wind in the willows Kenneth Grahame</a></li>
+                            <li><a href="/TopiBooks/the-wizard-of-oz.html">the wizard of oz L Frank Baum</a></li>
+                            <li><a href="/TopiBooks/think-and-grow-rich.html">think and grow rich Napoleon Hill</a></li>
+                            <li><a href="/TopiBooks/think-big.html">think big Ben carson</a></li>
+                            <li><a href="/TopiBooks/through-the-ever-night.html">through the ever night veronica rossi</a></li>
+                            <li><a href="/TopiBooks/to-kill-a-mockingbird.html">to kill a mockingbird Harper lee</a></li>
+                            <li><a href="/TopiBooks/to-win-her-heart.html">to win her heart karen Witemeyer</a></li>
+                            <li><a href="/TopiBooks/tom-sawyer.html">tom-sawyer mark twain</a></li>
+                            <li><a href="/TopiBooks/treasure-island.html">treasure island Robert Louis Stevenson</a></li>
+                            <li><a href="/TopiBooks/uglies.html">uglies scott Westerfeld</a></li>
+                            <li><a href="/TopiBooks/under-the-never-sky.html">under the never sky veronica Rossi</a></li>
+                            <li><a href="/TopiBooks/war-and-peace.html">war and peace leo Tolstoy</a></li>
+                            <li><a href="/TopiBooks/wuthering-heights.html">wuthering heights Emily Bronte</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                    
+           </nav>
+          
+           </nav>
+           <nav class="content">
+            <img src="/Images/Topi2.PNG">
+           
+           </nav>
+     
+            
+            </div>
+          
+        </header>
+    
+        <br>
+<div class="filter-box">
+    <a href="/TopiBooks/all-books.html">All</a>
+    <a href="/TopiBooks/romance.html">Romance</a>
+     <a href="/TopiBooks/dystopian.html">Dystopian</a>
+     <a href="/TopiBooks/motivational.html">Motivational</a>
+     <a href="/TopiBooks/classics.html">Classics</a>
+     <a href="/TopiBooks/children.html">Kids</a>
+ </div>
+
+<br>
+<br>
+
+        <section class="features">
+            <figure>            
+                <img src="/Resized images/maze runner.jpg" alt="The maze runner James Dashner">
+                <button><a href="/Pdf/The Maze Runner - James Dashner.pdf">Pdf</a></button>
+                <button><a href="/Epub/The Maze Runner - James Dashner.epub">Epub</a></button>
+                <h3>The Maze Runner</h3>
+               
+                <div><h4><strong>The Maze Runner is a 2009 young adult dystopian science fiction 
+                    novel written by American author James Dashner and the first book 
+                    released in The Maze Runner series.
+                    <br> <br>                   
+                     When Thomas wakes up in the lift, 
+                    the only thing he can remember is his name. He’s surrounded by strangers—boys 
+                    whose memories are also gone. Outside the towering stone walls that surround 
+                    them is a limitless, ever-changing maze. It’s the only way out—and no one’s 
+                    ever made it through alive. Then a girl arrives. The first girl ever. 
+                    And the message she delivers is terrifying: Remember. Survive. Run.
+                     </strong></h4>
+                    </div>
+                    </figure>
+                </section>
+
+        
+<footer style="background-color: rgb(109, 88, 88); color: white; margin-top: 100px;">
+ <nav>
+    
+    <a href="/TopiBooks/contact.html" style=" color: cornsilk;" >Contact us</a>
+     <br>
+     <br>
+     <a href="#" style=" color: cornsilk;">Articles</a>
+     
+     </nav>
+     <br>
+     <h5 style="color: bisque; font-family: Times New Roman;">Copyright &copy; 2021 TopiBooks .All rights reserved.</h5>
+     </footer>
+ 
+ 
+    <script src="/demo.js"></script>
+    <script src="/Jo.js"></script>
+
+
+</body>
+</html>
